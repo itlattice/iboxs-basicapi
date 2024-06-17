@@ -1,0 +1,34 @@
+{
+    "name": "iboxs/basicapi",
+    "description": "懒猿公共API SDK",
+    "type": "1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "itlattice",
+            "email": "itlattice@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-redis":"*",
+        "iboxs/redis": "1.1.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "iboxs\\basicapi\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "iboxs": {
+            "config":{
+                "hwt": "src/common/basicapi.php"
+            }
+        }
+    }
+}
